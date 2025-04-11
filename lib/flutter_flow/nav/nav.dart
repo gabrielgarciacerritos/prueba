@@ -33,17 +33,52 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
-      errorBuilder: (context, state) => HomePageWidget(),
+      errorBuilder: (context, state) => LoginWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => HomePageWidget(),
+          builder: (context, _) => LoginWidget(),
         ),
         FFRoute(
-          name: HomePageWidget.routeName,
-          path: HomePageWidget.routePath,
-          builder: (context, params) => HomePageWidget(),
+          name: LoginWidget.routeName,
+          path: LoginWidget.routePath,
+          builder: (context, params) => LoginWidget(),
+        ),
+        FFRoute(
+          name: MenuPrincipalWidget.routeName,
+          path: MenuPrincipalWidget.routePath,
+          builder: (context, params) => MenuPrincipalWidget(),
+        ),
+        FFRoute(
+          name: MenuTereasWidget.routeName,
+          path: MenuTereasWidget.routePath,
+          builder: (context, params) => MenuTereasWidget(),
+        ),
+        FFRoute(
+          name: MenuUsuariosWidget.routeName,
+          path: MenuUsuariosWidget.routePath,
+          builder: (context, params) => MenuUsuariosWidget(),
+        ),
+        FFRoute(
+          name: CrearTareaWidget.routeName,
+          path: CrearTareaWidget.routePath,
+          builder: (context, params) => CrearTareaWidget(),
+        ),
+        FFRoute(
+          name: EditarTareaWidget.routeName,
+          path: EditarTareaWidget.routePath,
+          builder: (context, params) => EditarTareaWidget(),
+        ),
+        FFRoute(
+          name: SeleccionarUsuariosWidget.routeName,
+          path: SeleccionarUsuariosWidget.routePath,
+          builder: (context, params) => SeleccionarUsuariosWidget(),
+        ),
+        FFRoute(
+          name: VerTareaWidget.routeName,
+          path: VerTareaWidget.routePath,
+          builder: (context, params) => VerTareaWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -115,6 +150,7 @@ class FFParameters {
     String paramName,
     ParamType type, {
     bool isList = false,
+    List<String>? collectionNamePath,
   }) {
     if (futureParamValues.containsKey(paramName)) {
       return futureParamValues[paramName];
@@ -132,6 +168,7 @@ class FFParameters {
       param,
       type,
       isList,
+      collectionNamePath: collectionNamePath,
     );
   }
 }

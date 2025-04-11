@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "125912560334",
+    "project_id": "prueba-gnlh9t",
+    "storage_bucket": "prueba-gnlh9t.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125912560334:android:30f951b9f94cde2e98169f",
+        "android_client_info": {
+          "package_name": "com.mycompany.prueba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcoyxY_lCYENSqeJeN6_mYAvhaUp8x0EM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125912560334:android:4b170278b326d0bb98169f",
+        "android_client_info": {
+          "package_name": "prueba.cliente"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcoyxY_lCYENSqeJeN6_mYAvhaUp8x0EM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
