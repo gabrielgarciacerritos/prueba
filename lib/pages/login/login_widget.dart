@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/index.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'login_model.dart';
@@ -205,8 +206,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                     ),
                   ),
                   FFButtonWidget(
-                    onPressed: () {
-                      print('Button_Inicio_secion pressed ...');
+                    onPressed: () async {
+                      context.pushNamed(MenuPrincipalWidget.routeName);
                     },
                     text: 'Iniciar sesión',
                     options: FFButtonOptions(

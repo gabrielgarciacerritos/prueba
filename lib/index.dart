@@ -8,4 +8,4 @@ export '/pages/crear_tarea/crear_tarea_widget.dart' show CrearTareaWidget;
 export '/pages/editar_tarea/editar_tarea_widget.dart' show EditarTareaWidget;
 export '/pages/seleccionar_usuarios/seleccionar_usuarios_widget.dart'
     show SeleccionarUsuariosWidget;
-export '/ver_tarea/ver_tarea_widget.dart' show VerTareaWidget;
+export '/pages/ver_tarea/ver_tarea_widget.dart' show VerTareaWidget;
